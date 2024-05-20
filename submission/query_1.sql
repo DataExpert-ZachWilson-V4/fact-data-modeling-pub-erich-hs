@@ -1,3 +1,4 @@
+INSERT INTO bootcamp.nba_game_details
 -- The following CTE will enumerate duplicate records by aggregating the number
 -- of rows for each unique combination of game_id, team_id, and player_id.
 WITH deduped AS (
@@ -10,7 +11,6 @@ FROM bootcamp.nba_game_details
 -- game_id, team_id, and player_id into the bootcamp.nba_game_details table.
 -- This can be run as an INSERT OVERWRITE to replace the existing table.
 -- The deduplicated table has 668,339 records (originally 668,628).
-INSERT INTO bootcamp.nba_game_details
 SELECT
   game_id,
   team_id,

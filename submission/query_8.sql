@@ -6,7 +6,7 @@ WITH
         WHERE month_start = '2023-08-01'
     ),
     today AS (
-        SELECT * FROM daily_web_metrics
+        SELECT * FROM erich.daily_web_metrics
         WHERE DATE = date('2023-08-01')
     )
 SELECT
