@@ -1,3 +1,4 @@
+-- Query for question 1
 INSERT INTO bootcamp.nba_game_details
 -- The following CTE will enumerate duplicate records by aggregating the number
 -- of rows for each unique combination of game_id, team_id, and player_id.
