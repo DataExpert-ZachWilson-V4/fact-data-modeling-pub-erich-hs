@@ -27,4 +27,4 @@ SELECT
 FROM
     today t
     FULL OUTER JOIN yesterday y ON t.host = y.host
-    AND t.metric_name = y.metric_name
+    AND t.metric_name = y.metric_name 
